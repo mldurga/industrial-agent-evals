@@ -1,0 +1,9 @@
+timestamp,equipment,event_type,message,actor
+2026-03-01T06:00:00Z,CW,SHIFT,Day shift started. Plant steady.,m.chen
+2026-03-01T18:00:00Z,CW,SHIFT,Night shift started. No transfers planned.,j.okonkwo
+2026-03-02T06:00:00Z,CW,SHIFT,Day shift started.,m.chen
+2026-03-02T06:10:00Z,P-101A,TRIP,P-101A tripped. Discharge flow lost.,system
+2026-03-02T06:20:00Z,P-101B,START,P-101B started from the standby selector.,j.okonkwo
+2026-03-02T06:45:00Z,P-101A,NOTE,P-101A left out of service after high bearing temperature. Maintenance called.,j.okonkwo
+2026-03-03T08:30:00Z,E-201,NOTE,Bypass valve CW-E201-ZT-201 drifting open. Instrument technician notified.,m.chen
+2026-03-03T18:00:00Z,CW,SHIFT,Night shift started.,j.okonkwo
