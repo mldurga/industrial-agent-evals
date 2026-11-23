@@ -1,0 +1,122 @@
+# Seed questions for the first review pass.
+# Ids and categories only. No expected answers: those come from open coding.
+questions:
+  - id: q01
+    category: tag_lookup
+    question: "What is the tag for cooling water pump discharge flow, and what engineering unit is it in?"
+
+  - id: q02
+    category: tag_lookup
+    question: "List the temperature tags on heat exchanger E-201 and the engineering unit of each."
+
+  - id: q03
+    category: tag_lookup
+    question: "Which tag measures cooling water basin level, and what is the instrument range?"
+
+  - id: q04
+    category: tag_lookup
+    question: "What alarm limits are recorded for the P-101A bearing temperature tag?"
+
+  - id: q05
+    category: tag_lookup
+    question: "Is there a run-status tag for standby pump P-101B? If so, what is the tag name?"
+
+  - id: q06
+    category: trend_root_cause
+    question: "Between 04:00 and 06:10 UTC on 2 March 2026, what happened to P-101A bearing temperature (tag CW-P101-TT-101)? Was it steady, rising, or falling?"
+
+  - id: q07
+    category: trend_root_cause
+    question: "How long was cooling water discharge flow (CW-P101-FT-101) below 50 m3/h between 06:00 and 07:00 UTC on 2 March 2026, and at what time was it back above 50 m3/h?"
+
+  - id: q08
+    category: trend_root_cause
+    question: "How did E-201 process outlet temperature (CW-E201-TT-202) behave between 06:00 and 07:00 UTC on 2 March 2026, after cooling water flow was lost?"
+
+  - id: q09
+    category: trend_root_cause
+    question: "From 1 March 2026 00:00 UTC through 4 March 2026 00:00 UTC, is E-201 process outlet temperature (CW-E201-TT-202) drifting while tube-side process flow (CW-E201-FT-201) stays steady? Compare the slope of each tag."
+
+  - id: q10
+    category: trend_root_cause
+    question: "The E-201 cooling-water bypass valve (CW-E201-ZT-201) moved between 08:00 and 14:00 UTC on 3 March 2026. What did process outlet temperature (CW-E201-TT-202) do in that same window?"
+
+  - id: q11
+    category: trend_root_cause
+    question: "Did cooling water header pressure (CW-HDR-PT-110) collapse in the same minutes as pump discharge flow (CW-P101-FT-101) between 06:00 and 06:30 UTC on 2 March 2026?"
+
+  - id: q12
+    category: alarm_triage
+    question: "List urgent and high priority alarms that came in between 06:00 and 07:00 UTC on 2 March 2026. Which of them look like one flood started by a single event?"
+
+  - id: q13
+    category: alarm_triage
+    question: "Of the alarms that came in between 06:00 and 07:00 UTC on 2 March 2026, which were still unacknowledged 30 minutes after they occurred?"
+
+  - id: q14
+    category: alarm_triage
+    question: "For basin level tag CW-TK301-LT-301, how many times did the level-high alarm come in between 15:00 and 17:00 UTC on 3 March 2026, and does the timing look like a chattering alarm?"
+
+  - id: q15
+    category: alarm_triage
+    question: "How many medium or low priority alarms occurred from 1 March 2026 00:00 UTC through 2 March 2026 00:00 UTC, and were they acknowledged?"
+
+  - id: q16
+    category: alarm_triage
+    question: "Several alarms were in between 06:10 and 06:20 UTC on 2 March 2026. Which priority should an operator handle first, and which alarm text is that?"
+
+  - id: q17
+    category: unit_conversion
+    question: "What was the mean cooling water discharge flow (CW-P101-FT-101) between 12:00 and 13:00 UTC on 1 March 2026? The tag is in m3/h. Report the mean in litres per second as well, and state the conversion factor."
+
+  - id: q18
+    category: unit_conversion
+    question: "What was the mean pump P-101A discharge pressure (CW-P101-PT-101) from 1 March 2026 00:00 UTC through 2 March 2026 00:00 UTC? Give the result in kPa and in bar. State the factor you used."
+
+  - id: q19
+    category: unit_conversion
+    question: "Average E-201 process inlet temperature (CW-E201-TT-201) from 1 March 2026 00:00 UTC through 2 March 2026 00:00 UTC, and convert that average from degrees Celsius to degrees Fahrenheit."
+
+  - id: q20
+    category: unit_conversion
+    question: "What was the cooling water basin level (CW-TK301-LT-301) between 12:00 and 12:05 UTC on 1 March 2026? Report the reading in percent and in metres. The span is 0 to 100 percent for 0 to 4.5 metres."
+
+  - id: q21
+    category: unit_conversion
+    question: "What was the mean cooling water header pressure (CW-HDR-PT-110) between 00:00 and 06:00 UTC on 1 March 2026? Report it in kPa and in psi. Use the factor 1 psi = 6.894757 kPa."
+
+  - id: q22
+    category: ambiguous_unanswerable
+    question: "Is the plant okay?"
+
+  - id: q23
+    category: ambiguous_unanswerable
+    question: "Why did operations change the basin level setpoint last week?"
+
+  - id: q24
+    category: ambiguous_unanswerable
+    question: "Who was the outside operator on night shift on 2 March 2026, and did they follow the pump-changeover procedure?"
+
+  - id: q25
+    category: ambiguous_unanswerable
+    question: "What will cooling water flow be tomorrow at 09:00 UTC?"
+
+  - id: q26
+    category: ambiguous_unanswerable
+    question: "Was the P-101A trip on 2 March 2026 definitely a bearing failure, rather than a faulty bearing-temperature instrument? Use CW-P101-TT-101 and CW-P101-FT-101 between 04:00 and 07:00 UTC on 2 March 2026. Answer only from the historian."
+
+  - id: q27
+    category: multi_step
+    question: "Build a short timeline of the cooling-water upset between 04:00 and 07:00 UTC on 2 March 2026. Include P-101A bearing temperature (CW-P101-TT-101), discharge flow (CW-P101-FT-101), which pump was running (CW-P101-ST-101 and CW-P101-ST-102), and the first urgent alarm in that window."
+
+  - id: q28
+    category: multi_step
+    question: "Did the E-201 bypass valve drift (CW-E201-ZT-201, look between 08:00 and 14:00 UTC on 3 March 2026) and the basin level-high alarm chatter (CW-TK301-LT-301, look between 15:00 and 17:00 UTC on 3 March 2026) happen in the same hour, or were they separate?"
+
+  - id: q29
+    category: multi_step
+    question: "For E-201 from 1 March 2026 00:00 UTC through 1 March 2026 06:00 UTC, what was the mean process-side temperature drop (CW-E201-TT-201 minus CW-E201-TT-202) and the mean cooling-water-side temperature rise (CW-E201-TT-204 minus CW-E201-TT-203)? Which absolute delta is larger?"
+
+  - id: q30
+    category: multi_step
+    question: "On 2 March 2026, which came first: P-101A bearing temperature (CW-P101-TT-101) reaching 85 degC, or discharge flow (CW-P101-FT-101) falling below 50 m3/h? How many minutes apart were those two crossings? Look between 04:00 and 07:00 UTC on 2 March 2026. Also state whether CW-P101-ST-101 and CW-P101-ST-102 were ever both 1 in that window."

@@ -1,0 +1,28 @@
+[project]
+name = "plant-evals"
+version = "0.1.0"
+description = "Trace collection for error-analysis-first evals on industrial process data."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "durga kumar doddi", email = "durgaamma2005@gmail.com" }]
+dependencies = ["pyyaml>=6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+generate-plant = "plant_evals.generate:main"
+collect-traces = "plant_evals.collect:main"
+review-traces = "plant_evals.review:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

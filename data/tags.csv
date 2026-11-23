@@ -1,0 +1,21 @@
+tag,description,equipment,area,eng_unit,data_type,range_min,range_max,alarm_limits
+CW-P101-FT-101,Cooling water pump discharge flow,P-101,COOLING-WATER,m3/h,analog,0,800,LO 250 m3/h; LOLO 30 m3/h
+CW-P101-PT-101,Pump P-101A discharge pressure,P-101A,COOLING-WATER,kPa,analog,0,1000,LO 200 kPa
+CW-P101-PT-100,Pump P-101A suction pressure,P-101A,COOLING-WATER,kPa,analog,0,500,
+CW-P101-TT-101,Pump P-101A bearing temperature,P-101A,COOLING-WATER,degC,analog,0,150,HI 85 degC; HIHI 95 degC
+CW-P101-IT-101,Pump P-101A motor current,P-101A,COOLING-WATER,A,analog,0,300,
+CW-P101-ZT-101,Pump P-101A discharge valve position,P-101A,COOLING-WATER,%,analog,0,100,
+CW-P101-ST-101,Pump P-101A running status,P-101A,COOLING-WATER,0/1,digital,0,1,
+CW-P101-ST-102,Standby pump P-101B running status,P-101B,COOLING-WATER,0/1,digital,0,1,
+CW-P101-IT-102,Pump P-101B motor current,P-101B,COOLING-WATER,A,analog,0,300,HI 190 A
+CW-HDR-PT-110,Cooling water header pressure,CW-HEADER,COOLING-WATER,kPa,analog,0,1000,LO 200 kPa
+CW-E201-FT-201,E-201 heat exchanger tube-side process flow,E-201,COOLING-WATER,m3/h,analog,0,400,
+CW-E201-TT-201,E-201 heat exchanger process inlet temperature,E-201,COOLING-WATER,degC,analog,0,200,
+CW-E201-TT-202,E-201 heat exchanger process outlet temperature,E-201,COOLING-WATER,degC,analog,0,200,HI 55 degC; HIHI 70 degC
+CW-E201-TT-203,E-201 heat exchanger cooling-water inlet temperature,E-201,COOLING-WATER,degC,analog,0,100,
+CW-E201-TT-204,E-201 heat exchanger cooling-water outlet temperature,E-201,COOLING-WATER,degC,analog,0,100,
+CW-E201-PT-201,E-201 heat exchanger process inlet pressure,E-201,COOLING-WATER,kPa,analog,0,1200,
+CW-E201-PT-202,E-201 heat exchanger process outlet pressure,E-201,COOLING-WATER,kPa,analog,0,1200,
+CW-E201-ZT-201,E-201 heat exchanger cooling-water bypass valve position,E-201,COOLING-WATER,%,analog,0,100,HI 25 %
+CW-TK301-LT-301,Cooling water basin level,TK-301,COOLING-WATER,%,analog,0,100,HI 80 %
+CW-TK301-TT-301,Cooling water basin temperature,TK-301,COOLING-WATER,degC,analog,0,80,
